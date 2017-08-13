@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Primises</title>
+    </head>
+    <body>
+        <script>
+            const resposta = fetch('http://api.postmon.com.br/v1/cep/60743060');
+
+            resposta.then(data => data.json())
+                    .then(data => { console.log(data) })
+                    .catch(erro => { console.log(erro) });
+        </script>
+    </body>
+</html>
